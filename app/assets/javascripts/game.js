@@ -5,5 +5,7 @@
 
 $(document).ready(function(){
   console.log('working')
-  $(this).flip()
+  $(this).on('click', function(){
+    $('.card', this).flip()
+  });
 });
