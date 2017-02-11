@@ -1,3 +1,25 @@
 // Place all the styles related to the Pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+div.container {
+  background-color: black;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+div.carousel-inner {
+  height: auto;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}

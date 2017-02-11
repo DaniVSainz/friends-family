@@ -1,29 +1,55 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Pictures</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pictures.each do |picture| %>
-      <tr>
-        <td><%= picture.title %></td>
-        <td><%= image_tag picture.url %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 <%= link_to 'New Picture', new_picture_path %>
+<div class="container">
+    <div id="main_area">
+        <!-- Slider -->
+        <div class="row">
+            <div class="col-sm-6" id="slider-thumbs">
+                <!-- Bottom switcher of slider -->
+                <ul class="hide-bullets">
+                    <% id = -1 %>
+                    <% id_name = "carousel-selector-" %>
+                    <% @pictures.each do |picture| %>
+                      <%id += 1 %>
+                      <li class="col-sm-3">
+                        <%= image_tag picture.url, class: "thumbnail img-responsive", id: "#{id_name + id.to_s }" %>
+                      </li>
+                    <% end %>
+                </ul>
+              </div>
+            <div class="col-sm-6">
+                <div class="col-xs-12" id="slider">
+                    <!-- Top part of the slider -->
+                    <div class="row">
+                        <div class="col-sm-12" id="carousel-bounding-box">
+                            <div class="carousel slide" id="myCarousel">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                  <% @pictures.each_with_index do |picture,index| %>
+                                    <% if index == 0 %>
+                                      <div class="active item img-responsive" data-slide-number="0">
+                                        <%= image_tag picture.url %>
+                                      </div>
+                                    <% else %>
+                                      <div class="item img-responsive" data-slide-number="<%= index %>">
+                                        <%= image_tag picture.url %>
+                                      </div>
+                                    <% end %>
+                                  <% end %>
+                                </div>
+                                <!-- Carousel nav -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Slider-->
+        </div>
+
+    </div>
+</div>
