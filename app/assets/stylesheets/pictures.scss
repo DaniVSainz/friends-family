@@ -2,13 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#picture-page{
+  min-height: 100%;
+}
+
 .hide-bullets {
     list-style:none;
     margin-left: -40px;
     margin-top:20px;
 }
 
-div.container {
+#main_area{
   background-color: black;
 }
 
