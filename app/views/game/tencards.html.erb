@@ -5,56 +5,15 @@
   they are, and try to find the matching picture.  Get them all and you win!</p>
 
 <div class="container">
-  <div class="row">
-    <div class="col-xs-4 card" id="one_one">
+
+  <div class='row'>
+    <div class='col-md-12'>
+    <% @duplicated_array.each do |image| %>
+      <div class="col-xs-4 card">
         <img class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card" id="one_two">
-        <img class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card" id="one_three">
-        <img class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
+        <%= image_tag image.url, class: 'back' %>
+      </div>
+    <% end %>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-    <div class="col-xs-4 card">
-        <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-        <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-xs-offset-4 col-xs-4 card">
-      <img  class="front" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2904/s300/wyncode-icon.jpg" alt="pic-1">
-      <img class="back" src="http://lorempixel.com/output/animals-q-c-400-400-9.jpg" alt="pic-2">
-    </div>
 </div>
