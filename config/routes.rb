@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get 'completed',to: 'welcome#completed'
 
-  get 'update',to: 'pictures#update'
+  get 'updatepictures',to: 'pictures#updatepictures'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

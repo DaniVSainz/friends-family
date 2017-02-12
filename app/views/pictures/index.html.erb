@@ -12,15 +12,15 @@
 <div id="container">
   <div class="header container-fluid">
     <h1 class="text-center">Gallery</h1>
-      <%= link_to "Update", update_path, class:'btn-lg', id: 'ghost-button-rounded-corners'%>
+      <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-rounded-corners'%>
   </div>
   <div id="links">
     <% @pictures.each_with_index do |picture,index| %>
-    <div class="item">
-      <a href="<%= picture.url %>" title="<%= picture.title %>">
-        <img id="item" src="<%= picture.url %>" alt="<%= picture.title %>">
-      </a>
-    </div>
+      <div class="item">
+        <a href="<%= picture.url %>" title="<%= picture.title %>">
+          <img id="item" src="<%= picture.url %>" alt="<%= picture.title %>">
+        </a>
+      </div>
     <% end %>
   </div>
 </div>

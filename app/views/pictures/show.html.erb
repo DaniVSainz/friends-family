@@ -3,11 +3,11 @@
 <p>
   <strong>Title:</strong>
   <%= @picture.title %>
+  <%= link_to 'Edit', edit_picture_path(@picture) %> |
+  <%= link_to 'Back', pictures_path %>
+  <%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
 </p>
 
 <p>
   <%= image_tag @picture.url %>
 </p>
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
