@@ -4,8 +4,7 @@
 // };
 
 $(document).ready(function(){
-  console.log('working')
   $(this).on('click', function(){
-    $('.card', this).flip()
-  });
+    $('.card', this).flip();
+ });
 });
