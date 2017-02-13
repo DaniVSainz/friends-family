@@ -5,14 +5,13 @@
     background: #DDD;
     max-width: 1005px;
     margin: auto;
-    border: 2px solid white;
-    border-radius: 10px;
 }
 .item {
     width: 200px;
     float: left;
 }
 .item img {
+    height: 200px; //breaks masonry
     display: block;
     width: 100%;
 }
@@ -28,7 +27,10 @@
 
 #black-bg{
   background-color: black;
+  height: auto;
+  width: 100%;
 }
+
 
 
 
