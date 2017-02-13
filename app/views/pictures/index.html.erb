@@ -8,22 +8,23 @@
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div>
-
-<div id="container">
-  <div class="header container-fluid">
-    <h1 class="text-center">Gallery</h1>
-      <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-rounded-corners'%>
-      <%= link_to 'New Image', new_picture_path ,class: 'btn-lg', id: 'ghost-button-rounded-corners' %>
-  </div>
-  <div id="links">
-    <% @pictures.each_with_index do |picture,index| %>
-      <div class="item">
-        <a href="<%= picture.url %>" title="<%= picture.title %>">
-          <img id="item" src="<%= picture.url %>" alt="<%= picture.title %>">
-        </a>
+<div id="black-bg">
+  <div id="container">
+    <div class="header container-fluid">
+      <h1 class="text-center">Gallery</h1>
+        <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-rounded-corners'%>
+        <%= link_to 'New Image', new_picture_path ,class: 'btn-lg', id: 'ghost-button-rounded-corners' %>
+    </div>
+      <div id="links">
+        <% @pictures.each_with_index do |picture,index| %>
+        <div class="item">
+          <a href="<%= picture.url %>" title="<%= picture.title %>">
+            <img id="item" src="<%= picture.url %>" alt="<%= picture.title %>">
+          </a>
+        </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
+    </div>
 </div>
 <script>
 document.getElementById('links').onclick = function (event) {

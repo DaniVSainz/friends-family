@@ -5,6 +5,8 @@
     background: #DDD;
     max-width: 1000px;
     margin:auto;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 .item {
     width: 200px;
@@ -24,6 +26,9 @@
   color: white;
 }
 
+#black-bg{
+  background-color: black;
+}
 
 
 
