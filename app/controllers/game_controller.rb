@@ -4,5 +4,7 @@ class GameController < ApplicationController
     @duplicated_array = [@pictures,@pictures].flatten.shuffle
   end
   def twentycards
+    @pictures = Picture.all.sample(10)
+    @duplicated_array = [@pictures,@pictures].flatten.shuffle
   end
 end
