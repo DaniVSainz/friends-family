@@ -41,10 +41,10 @@ $("img.front").click(function() {
     clickCount++;
     // console.log(clickCount)
       if ($(card1_back).attr('src') !== $(card2_back).attr('src')) {
-        card1_front.show();
-        card2_front.show();
-        card1_back.hide();
-        card2_back.hide();
+        card1_front.delay(800).show(0);
+        card2_front.delay(800).show(0);
+        card1_back.delay(800).hide(0);
+        card2_back.delay(800).hide(0);
       }
       clickCount = 0;
       // console.log(clickCount);
