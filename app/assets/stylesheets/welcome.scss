@@ -9,10 +9,16 @@ body{
   color: white;
 }
 
+#welcome-button{
+  min-height: 100vh;
+  display:flex;
+  align-items: center !important;
+  margin-left: 35%;
+}
 
 #welcome-index {
   //https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
-  background-image: url('1.jpeg');
+  background-image: url('6.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -23,6 +29,7 @@ body{
 // Welcome index ghost buttons //
 
 #ghost-button-rounded-corners{
+  margin-right: 10px;
   display: inline-block;
   width: 200px;
   padding: 8px;
