@@ -6,16 +6,26 @@ body{
 }
 //welcome-index h1 WynGallery
 #welcome-h1 {
+  margin-top: 50px;
   color: white;
+  font-size: 100px;
+}
+
+h2.text-center {
+  color: white;
+  font-size: 40px;
 }
 
 #welcome-button{
-  min-height: 100vh;
   display:flex;
   align-items: center !important;
-  margin-left: 35%;
+  margin: auto;
+  padding-top: 200px;
 }
 
+#three-buttons {
+  margin: auto;
+}
 #welcome-index {
   //https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
   background-image: url('6.jpeg');
