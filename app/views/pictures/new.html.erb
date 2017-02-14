@@ -1,5 +1,10 @@
 <h1 id='picture-header'>New Picture</h1>
 
+<div id="upload-picture-instructions">
+  <h4>You can add pictures to the Gallery by
+    linking an image address and give the picture a name.</h4>
+</div>
 <%= render 'form', picture: @picture %>
-
-<%= link_to 'Back', pictures_path %>
+<div class="edit-link-styling" >
+  <%= link_to 'Back', pictures_path %>
+</div>
