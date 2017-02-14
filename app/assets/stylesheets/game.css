@@ -57,6 +57,8 @@ img.back, img.front {
   margin-bottom: 10px;
 }
 
-.card:last-of-type {
+#last_row {
+  display: flex;
   justify-content: center;
+  
 }
