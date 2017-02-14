@@ -416,6 +416,27 @@ div.actions {
   padding-top: 22px;
 }
 
+.edit-link-styling {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  padding: 8px;
+  color: #39C8FC;
+  border: 1px solid #39C8FC;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.edit-link-styling a {
+  text-decoration: none;
+}
+
+
+
 div.actions input {
   margin-right: 10px;
   display: inline-block;
@@ -433,11 +454,14 @@ div.actions input {
 }
 
 div.actions input:hover,
-div.actions input:active {
+div.actions input:active,
+.edit-link-styling a:hover,
+.edit-link-styling a:active {
   background-color: #fff;
   color: #000;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
+
 }
 
 a {
@@ -451,4 +475,19 @@ a {
   padding-bottom: 150px;
   width: 100%;
 
+}
+
+#upload-pictures-instructions {
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  padding: 0;
+
+}
+
+#upload-pictures-instructions h4 {
+  text-align: center;
+  padding: none;
+
+  font-family: Lora;
 }
