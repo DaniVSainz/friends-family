@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Photogur</title>
+    <title>WynMemory</title>
     <%= csrf_meta_tags %>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
@@ -13,12 +13,13 @@
 <!-- 'data-turbolinks-track': 'reload'  -->
     <%= stylesheet_link_tag    'application', media: 'all'  %>
     <%= javascript_include_tag 'application' %>
-
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
+    <%= stylesheet_link_tag    'application', media: 'all'  %>
 
   </head>
 
@@ -34,12 +35,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/tencards">10 cards</a></li>
             <li><a href="/twentycards">20 cards</a></li>
             <li><a href="/pictures">Image Gallery</a></li>
-            <li><a href="/about">About</a></li>
             <li><%= link_to 'Upload Image', new_picture_path %></li>
+            <li><a href="/about">About</a></li>
           </ul>
 
 

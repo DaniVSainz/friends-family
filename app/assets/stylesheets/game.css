@@ -3,11 +3,60 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
 
-/*.back {
-  display: none;
-}*/
+/*Top*/
 
-.back {
-  height: 300px;
-  width: 300px;
+div.game-header {
+  text-align: center;
+  background-color: #39C8FC;
+  padding-bottom: 15px;
+}
+
+.game-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 35px;
+  font-size: 50px;
+}
+
+.game-header h3 {
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.instructions-header {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.game-header p {
+  font-size: 15px;
+}
+
+
+/*game*/
+
+
+.container {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+img.back, img.front {
+  height: 200px;
+  width: 200px;
+  display: inline-flex;
+}
+
+.card {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card:last-of-type {
+  justify-content: center;
 }
