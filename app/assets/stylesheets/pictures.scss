@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #container {
-    background: #39C8FC;
     max-width: 1005px;
     margin: auto;
 }
@@ -17,7 +16,6 @@
     width: 100%;
 }
 #links {
-  background-color: black;
   height: 100vh;
 }
 
@@ -27,12 +25,16 @@
 }
 
 #black-bg{
-  background-color: black;
   height: auto;
   padding-bottom: 150px;
   width: 100%;
   margin-bottom: 50px;
 }
+
+#picture-header {
+  background-color: #39c8fc;
+}
+
 
 div#links {
   margin-bottom: 30px;
@@ -42,7 +44,28 @@ h1 {
   font-size: 50px;
 }
 
-
+//Image Gallery Buttons
+#ghost-button-pictures{
+  margin-right: 10px;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+#ghost-button-pictures:hover,
+#ghost-button-pictures:active {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
 
 p {
     font: normal 14px/20px helvetica, arial, sans-serif;

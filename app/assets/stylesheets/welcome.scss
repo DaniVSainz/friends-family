@@ -85,6 +85,29 @@ a#wyncode img {
   justify-content: center;
 }
 
+//About Ghost Buttons!!
+#ghost-button{
+  margin-right: 10px;
+  display: inline-block;
+  width: 125px;
+  padding: 8px;
+  color: #39C8FC;
+  border: 1px solid #39C8FC;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+#ghost-button:hover,
+#ghost-button:active {
+  background-color: #39C8FC;
+  color: white;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
 //About pictures
 #about-picture {
   width: 200px;

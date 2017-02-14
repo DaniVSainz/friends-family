@@ -9,14 +9,14 @@
     <ol class="indicator"></ol>
 </div>
 <div id="black-bg">
+  <div class="header container-fluid" id="picture-header">
+    <h1 class="text-center">Gallery</h1>
+      <div id="button-div">
+        <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-pictures'%>
+        <%= link_to 'New Image', new_picture_path ,class: 'btn-lg', id: 'ghost-button-pictures'%>
+      </div>
+  </div>
   <div id="container">
-    <div class="header container-fluid">
-      <h1 class="text-center">Gallery</h1>
-        <div id="button-div">
-          <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-rounded-corners'%>
-          <%= link_to 'New Image', new_picture_path ,class: 'btn-lg', id: 'ghost-button-rounded-corners' %>
-        </div>
-    </div>
       <div id="links">
         <% @pictures.each_with_index do |picture,index| %>
         <div class="item">
