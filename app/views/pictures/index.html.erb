@@ -12,8 +12,12 @@
   <div class="header container-fluid" id="picture-header">
     <h1 class="text-center">Gallery</h1>
       <div id="button-div">
-        <%= link_to "Update", updatepictures_path, class:'btn-lg', id: 'ghost-button-pictures'%>
-        <%= link_to 'New Image', new_picture_path ,class: 'btn-lg', id: 'ghost-button-pictures'%>
+        <%= link_to updatepictures_path, class: "btn-md" , id:'ghost-button-pictures' do %>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"> Update Pictures</i>
+        <% end %>
+        <%= link_to new_picture_path, class: "btn-md" , id:'ghost-button-pictures' do %>
+          <i class="fa fa-upload" aria-hidden="true"> Upload Image</i>
+        <% end %>
       </div>
   </div>
   <div id="container">
