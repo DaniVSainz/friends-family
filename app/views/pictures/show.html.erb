@@ -1,13 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div id="editing-page">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
-  <%= link_to 'Edit', edit_picture_path(@picture) %> |
-  <%= link_to 'Back', pictures_path %>
-  <%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
-</p>
+  <div id="editing-page-title">
+    <p>
+      <strong>Title:</strong>
+      <%= @picture.title %>
 
-<p>
-  <%= image_tag @picture.url %>
-</p>
+    </p>
+  </div>
+
+  <p>
+    <%= image_tag @picture.url %>
+  </p>
+
+  <div id='editing-page-buttons'>
+    <p>
+      <%= link_to 'Edit', edit_picture_path(@picture) %>
+      <%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Back', pictures_path %>
+    </p>
+
+  </div>
+
+</div>

@@ -48,6 +48,7 @@ h1 {
 #ghost-button-pictures{
   margin-right: 10px;
   display: inline-block;
+  margin-bottom: 10px;
   width: 200px;
   padding: 8px;
   color: black;
@@ -390,7 +391,6 @@ div#button-div {
   text-align: center;
 }
 
-
 h1#picture-header {
   background-color: #39C8FC;
   color: black;
@@ -470,7 +470,6 @@ a {
 }
 
 .update-container {
-  background-color: black;
   height: auto;
   padding-bottom: 150px;
   width: 100%;
@@ -485,9 +484,76 @@ a {
 
 }
 
-#upload-pictures-instructions h4 {
+ h4 {
   text-align: center;
   padding: none;
 
   font-family: Lora;
 }
+
+// Editing picture page
+#editing-page {
+  text-align: center;
+  margin: auto;
+  margin-top: -10px;
+}
+
+div#editing-page-title {
+  background-color: #39C8FC;
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-family: Lora;
+  padding: 50px 0;
+  margin-top: 0;
+}
+#editing-page-title p {
+    font-size: 50px;
+}
+
+#editing-page img {
+  margin-top: 40px;
+}
+
+#editing-page-buttons {
+  margin-top: 20px;
+}
+
+#editing-page-buttons a{
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 8px;
+  color: #39C8FC;
+  border: 1px solid #39C8FC;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+// Actual edit picture page
+
+#edit-picture-page {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#edit-picture-page a{
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 8px;
+  color: #39C8FC;
+  border: 1px solid #39C8FC;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  }
