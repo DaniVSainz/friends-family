@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #container {
-    background: #DDD;
+    background: #39C8FC;
     max-width: 1005px;
     margin: auto;
 }
@@ -31,6 +31,9 @@
   width: 100%;
 }
 
+h1 {
+  font-size: 50px;
+}
 
 
 
@@ -347,3 +350,12 @@ body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loadin
     margin-left: -64px;
 }
 /*# sourceMappingURL=blueimp-gallery.min.css.map */
+
+.btn-lg {
+  margin-bottom: 15px;
+
+}
+
+div#button-div {
+  text-align: center;
+}
