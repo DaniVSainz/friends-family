@@ -6,6 +6,7 @@
     max-width: 1005px;
     margin: auto;
 }
+
 .item {
     width: 200px;
     float: left;
@@ -28,7 +29,13 @@
 #black-bg{
   background-color: black;
   height: auto;
+  padding-bottom: 150px;
   width: 100%;
+  margin-bottom: 50px;
+}
+
+div#links {
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -358,4 +365,67 @@ body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loadin
 
 div#button-div {
   text-align: center;
+}
+
+
+h1#picture-header {
+  background-color: #39C8FC;
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-family: Lora;
+  padding: 50px 0;
+}
+
+#upload-form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+div.field {
+  margin: 5px 10px 0 10px;
+  font-size: 18px;
+}
+
+div.actions {
+  padding-top: 22px;
+}
+
+div.actions input {
+  margin-right: 10px;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+div.actions input:hover,
+div.actions input:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.update-container {
+  background-color: black;
+  height: auto;
+  padding-bottom: 150px;
+  width: 100%;
+
 }

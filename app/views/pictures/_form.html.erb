@@ -10,18 +10,19 @@
       </ul>
     </div>
   <% end %>
+  <div id="upload-form">
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+    <div class="field">
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </div>
 
-  <div class="field">
-    <%= f.label :url %>
-    <%= f.text_field :url %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>
