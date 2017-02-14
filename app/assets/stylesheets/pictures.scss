@@ -48,6 +48,7 @@ h1 {
 #ghost-button-pictures{
   margin-right: 10px;
   display: inline-block;
+  margin-bottom: 10px;
   width: 200px;
   padding: 8px;
   color: black;
@@ -390,6 +391,15 @@ div#button-div {
   text-align: center;
 }
 
+// #update-container-page {
+//   background-color: #39C8FC;
+//   color: black;
+//   width: auto;
+//   margin: 0;
+//   text-align: center;
+//   font-family: Lora;
+//   padding: 50px 0;
+// }
 
 h1#picture-header {
   background-color: #39C8FC;
@@ -470,7 +480,6 @@ a {
 }
 
 .update-container {
-  background-color: black;
   height: auto;
   padding-bottom: 150px;
   width: 100%;
