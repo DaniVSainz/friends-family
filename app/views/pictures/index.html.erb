@@ -21,9 +21,10 @@
       </div>
   </div>
   <div id="container">
-      <div id="links">
+    <div class="row">
+      <div class="col-md-12" id="links"> <%# Used by blueimp gallery %>
         <% @pictures.each_with_index do |picture,index| %>
-        <div class="item">
+        <div class="item"> <%# used to resize the images %>
           <a href="<%= picture.url %>" title="<%= picture.title %>">
             <img id="item" src="<%= picture.url %>" alt="<%= picture.title %>">
           </a>
@@ -31,6 +32,7 @@
         <% end %>
       </div>
     </div>
+  </div>
 </div>
 <script>
 document.getElementById('links').onclick = function (event) {

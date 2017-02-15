@@ -558,3 +558,18 @@ div#editing-page-title {
   transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
   }
+
+
+@media only screen and (max-width: 999px) {
+  #container {
+    width: 100%;
+  }
+  .item {
+    width : 20%;
+    height: 20%;
+  }
+  .item img{
+    height: 100%;
+    width: 100%;
+  }
+}
