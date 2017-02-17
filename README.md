@@ -1,24 +1,8 @@
-# README
+# Currently Deployed 
+https://wynmemory.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Our app was made  over 2 and a half days.
 
-Things you may want to cover:
+The image gallery implements Mit's Blueimp gallery
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And we use our galleries database to pull images into our game.
