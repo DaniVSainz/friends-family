@@ -1,7 +1,7 @@
 # Currently Deployed 
 https://wynmemory.herokuapp.com/
 
-Our app was made  over 2 and a half days.
+Our app was made  over 2 and a half days for a project assigned at Wyncode.
 
 
 # Features
