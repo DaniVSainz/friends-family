@@ -10,7 +10,7 @@ Our app was made  over 2 and a half days.
 3. The 10/20 Card game pulls 5 **randomized**  and  **Unique** images from the database, doubles them and creates the layout.
 
 ##### Created by :
-https://github.com/BDFarrey
-and 
+https://github.com/BDFarrey  
+and   
 https://github.com/DaniVSainz
 
